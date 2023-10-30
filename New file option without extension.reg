@@ -1,10 +1,11 @@
 Windows Registry Editor Version 5.00
+;Simple registry script to create an option in the "New" explorer context menu to create a file without a file extension.
 
 [HKEY_CLASSES_ROOT\.]
 @="emptyfile"
 
 [HKEY_CLASSES_ROOT\.\ShellNew]
-@="Empty File"
+@="File"
 "NullFile"="1"
 
 [HKEY_CLASSES_ROOT\emptyfile]
